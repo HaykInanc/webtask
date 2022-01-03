@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	<link rel="stylesheet" type="text/css" href="codemirror/theme/dracula.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div id="workSpace">
+		<div class="task">
+			<ul>
+				<li>Добавьте класс 
+					<span class="code">accent-text</span> для тега <span class="code">
+					&lt;p&gt;Автоматическое включение и отключение&lt;/p&gt;
+					</span>
+				</li>
+				<li>
+					Сделайте текст элементов с классом <span class="code">accent-text</span> "жирным" <span class="code">font-weight: bold</span></li>
+				<li>
+					Сделайте цвет текста элементов с классом <span class="code">accent-text</span> равным <span class="code">rgb(239, 123, 24)</span></li>
+			</ul>
+			</div>
+		<div class="trigger">
+			<div><h3>HTML</h3></div>
+			<div><h3>CSS</h3></div>
+			<div><h3>Javascript</h3></div>
+			<div><h3>Logs</h3></div>
+		</div>
+		<div class="fields">
+			<div class="field">
+				<textarea id="html"></textarea>
+			</div>
+			<div class="field">
+				<textarea id="css"></textarea>
+			</div>
+			<div class="field">
+				<textarea id="js" ></textarea>
+			</div>
+			<div class="field">
+				<textarea id="log"></textarea>
+			</div>
+		</div>
+		<div class="submit_box">
+			<button id="submit">Проверить</button>
+			<p>Код: <span id="code">Решите задачу для получения кода.</span></p>
+		</div>
+	</div>
+	<div id="result">
+		<div id="browser">
+			<div class="browserTop">
+				<div class="circles">
+					<div class="circle-1"></div>
+					<div class="circle-2"></div>
+					<div class="circle-3"></div>
+				</div>
+			</div>
+			<div id="forResult"></div>
+		</div>
+		<ul id="testResult"></ul>
+	</div>
+	<script src="codemirror/lib/codemirror.js"></script>
+	<script type="text/javascript" src='codemirror/mode/javascript/javascript.js'></script>
+	<script type="text/javascript" src='codemirror/mode/xml/xml.js'></script>
+	<script type="text/javascript" src='codemirror/mode/css/css.js'></script>
+	<script type="text/javascript" src='codemirror/mode/shell/shell.js'></script>
+	<script src="codemirror/addon/comment/comment.js"></script>
+	<script src="codemirror/keymap/sublime.js"></script>
+	<script type="text/javascript" src="codemirror.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="tests.js"></script>
+	<script type="text/javascript" src="calculate_code_obf.js"></script>
+</body>
+</html>
